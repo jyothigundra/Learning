@@ -8,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class LikesComponent {
 // class level variables.
   private likesCount = 0;
-  private isSelected = true;
+  private isSelected = false;
 
   // constructor
   constructor() {}
 
   // Click function.
   onClick() {
+    this.isSelected = !this.isSelected;
     this.likesCount += (this.isSelected) ? 1 : -1;
   }
 }
