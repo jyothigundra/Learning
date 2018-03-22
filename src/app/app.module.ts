@@ -7,6 +7,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { UppercaseDirective } from './shared/directives/uppercase.directive';
 import { LocalPipe } from './shared/pipes/local.pipe';
+import { LikesComponent } from './components/likes/likes.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { LocalPipe } from './shared/pipes/local.pipe';
     HeaderComponent,
     ContactComponent,
     UppercaseDirective,
-    LocalPipe
+    LocalPipe,
+    LikesComponent
   ],
   imports: [
     BrowserModule
