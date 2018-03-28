@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 
@@ -9,7 +10,8 @@ import { UppercaseDirective } from './shared/directives/uppercase.directive';
 import { LocalPipe } from './shared/pipes/local.pipe';
 import { LikesComponent } from './components/likes/likes.component';
 import { PanelComponent } from './components/panel/panel.component';
-import { InputFormatDirective } from './input-format.directive';
+import { InputFormatDirective } from './shared/directives/input-format.directive';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -21,10 +23,12 @@ import { InputFormatDirective } from './input-format.directive';
     LocalPipe,
     LikesComponent,
     PanelComponent,
-    InputFormatDirective
+    InputFormatDirective,
+    ContactUsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
