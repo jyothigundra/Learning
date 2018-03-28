@@ -9,6 +9,7 @@ import { UppercaseDirective } from './shared/directives/uppercase.directive';
 import { LocalPipe } from './shared/pipes/local.pipe';
 import { LikesComponent } from './components/likes/likes.component';
 import { PanelComponent } from './components/panel/panel.component';
+import { InputFormatDirective } from './input-format.directive';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PanelComponent } from './components/panel/panel.component';
     UppercaseDirective,
     LocalPipe,
     LikesComponent,
-    PanelComponent
+    PanelComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule
