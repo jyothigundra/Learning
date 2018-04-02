@@ -1,0 +1,16 @@
+.zippy{
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+.zippy-header{
+    font-weight: bold;
+    padding: 20px;
+}
+.zippy-body{
+    background-color: #f0f0f0;
+    padding: 20px;
+
+}
+.expanded{
+    background-color: #fcfc;
+}
