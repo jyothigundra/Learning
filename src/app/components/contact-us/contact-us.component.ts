@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contact-us',
+  selector: 'contact-us',
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css']
 })
-export class ContactUsComponent implements OnInit {
-
+export class ContactUsComponent {
+   log(_1){
+     console.log(_1);
+   }
   constructor() { }
 
-  ngOnInit() {
-  }
-
+ 
 }

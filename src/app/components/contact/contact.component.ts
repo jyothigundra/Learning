@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   private contactDetails;
+  // private firstName : FormControl;
+  @ViewChild ('myContactFrom') myContactFrom;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    // Service Call.
     this.contactDetails = [{
       'firstName': 'Rama',
       'secondName': 'Jyothi',
@@ -36,9 +40,12 @@ export class ContactComponent implements OnInit {
       'dob': '20/06/91',
       'age': '25'
     }
-    ]
+    ];
+    // service call ends.
+     this.myContactFrom.controls.firstName.setValue(this.contactDetails[0].firstName);
   }
   index(index, contact) {
     return index + 1;
   }
+
 }

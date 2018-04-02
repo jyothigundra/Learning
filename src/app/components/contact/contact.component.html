@@ -1,19 +1,21 @@
-<div class="form-group" *ngFor="let contact of contactDetails; TrackBy:index">
-  <div class="col-md-6">
-    <label for="firstName" class="col-md-2">First name</label>
-    <input type="text" [(ngModel)]="contact.firstName" #firstName[index]="ngModel" #fristNameElement class="form-group col-md-4" id="firstName">
-    <label for="secondName" class="col-md-2">second name</label>
-    <input type="text" class="form-group col-md-4" id="secondName">
-  </div>
-  <div class="col-md-6">
-    <label for="dob" class="col-md-2">Date of Birth</label>
-    <input type="text" class="form-group col-md-4" id="dob">
-    <label for="age" class="col-md-2">your age</label>
-    <input type="text" class="form-group col-md-4" id="age">
-  </div>
-</div>
+<form #myContactFrom="ngForm">
+  <!-- <div class="form-group" *ngFor="let contact of contactDetails; TrackBy:index"> -->
+    <div class="col-md-6">
+      <label for="firstName" class="col-md-2">First name</label>
+      <input type="text" ngModel name="firstName" #firstName="ngModel" #fristNameElement class="form-group col-md-4" id="firstName">
+      <label for="secondName" class="col-md-2">second name</label>
+      <input type="text" class="form-group col-md-4" id="secondName">
+    </div>
+    <div class="col-md-6">
+      <label for="dob" class="col-md-2">Date of Birth</label>
+      <input type="text" class="form-group col-md-4" id="dob">
+      <label for="age" class="col-md-2">your age</label>
+      <input type="text" class="form-group col-md-4" id="age">
+    </div>
+  <!-- </div> -->
 
-<div>
-  <button type="submit" class="btn btn-primary">Update</button>
-  <button type="submit" class="btn btn-secondary">Cancel</button>
-</div>
+  <div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="submit" class="btn btn-secondary">Cancel</button>
+  </div>
+</form>
