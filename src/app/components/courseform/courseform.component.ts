@@ -11,8 +11,8 @@ export class CourseformComponent {
     {id:2, name: 'Art'},
     {id:3, name: 'Languages'}
   ];
-  create(f){
-    console.log(f);
+  create(y){
+    console.log(y);
   }
 
  
