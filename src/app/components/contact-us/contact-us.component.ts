@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent {
+  contactMethods=[
+         {id:1, name: 'Email'},
+         {id:2, name: 'Phone'}
+
+  ];
    log(x){
      console.log(x);
    }
