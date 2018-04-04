@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent {
-   log(_1){
-     console.log(_1);
+   log(x){
+     console.log(x);
    }
-  constructor() { }
-
+submit(f){
+   console.log(f);
+}
  
 }
