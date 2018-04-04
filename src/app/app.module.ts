@@ -13,6 +13,7 @@ import { PanelComponent } from './components/panel/panel.component';
 import { InputFormatDirective } from './shared/directives/input-format.directive';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ZippyComponent } from './components/zippy/zippy.component';
+import { CourseformComponent } from './components/courseform/courseform.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ZippyComponent } from './components/zippy/zippy.component';
     PanelComponent,
     InputFormatDirective,
     ContactUsComponent,
-    ZippyComponent
+    ZippyComponent,
+    CourseformComponent
   ],
   imports: [
     BrowserModule,
