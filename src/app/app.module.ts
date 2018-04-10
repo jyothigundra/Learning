@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { ZippyComponent } from './components/zippy/zippy.component';
 import { CourseformComponent } from './components/courseform/courseform.component';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
+import { ChangePasswordComponent } from './components/change-password/change-password.component';
+import { PostsComponentComponent } from './components/posts-component/posts-component.component';
 
 
 @NgModule({
@@ -30,12 +33,15 @@ import { SignupFormComponent } from './components/signup-form/signup-form.compon
     ContactUsComponent,
     ZippyComponent,
     CourseformComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    ChangePasswordComponent,
+    PostsComponentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
